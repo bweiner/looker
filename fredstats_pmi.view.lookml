@@ -4,6 +4,7 @@
 
   - dimension_group: observation
     type: time
+<<<<<<< HEAD
     timeframes: [date]
     convert_tz: false
     primary_key: true
@@ -17,6 +18,16 @@
     type: average
     sql: ${pmi}
     
+=======
+    timeframes: [date, week, month]
+    convert_tz: false
+    sql: ${TABLE}.observation_date
+
+  - dimension: pmi
+    type: number
+    sql: ${TABLE}.pmi
+
+>>>>>>> branch 'master' of git@bweiner_looker_git:bweiner/looker.git
   - measure: count
     type: count
     drill_fields: []

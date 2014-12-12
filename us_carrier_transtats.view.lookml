@@ -50,11 +50,22 @@
 
   - dimension_group: ymd
     type: time
+<<<<<<< HEAD
     timeframes: [date]
     convert_tz: false
     primary_key: true
     sql: ${TABLE}.ymd
 
+=======
+    timeframes: [date, week, month]
+    convert_tz: false
+    sql: ${TABLE}.ymd
+
+  - measure: total_passengers
+    type: sum
+    sql: ${passengers}
+  
+>>>>>>> branch 'master' of git@bweiner_looker_git:bweiner/looker.git
   - measure: count
     type: count
     drill_fields: [dest_city_name, origin_city_name, unique_carrier_name]
