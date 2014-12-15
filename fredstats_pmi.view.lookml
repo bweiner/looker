@@ -18,7 +18,12 @@
     type: average
     sql: ${pmi}
 
+    
+  - measure: pmi_ave
+    type: average
+    sql: ${pmi}
+
   - measure: count
     type: count
     drill_fields: []
-
+    

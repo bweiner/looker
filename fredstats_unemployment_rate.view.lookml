@@ -13,13 +13,15 @@
   - dimension: unrate
     type: number
     decimals: 1
-
     sql: ${TABLE}.unrate
+
+    
+  - measure: urate_ave
+    type: average
+    decimals: 1
+    sql: ${unrate}
 
   - measure: count
     type: count
     drill_fields: []
     
-  - measure: urate_ave
-    type: average
-    sql: ${unrate}
