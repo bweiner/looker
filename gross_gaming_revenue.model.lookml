@@ -8,7 +8,7 @@
 
 - explore: fredstats_unemployed
 
-- explore: fredstats_unemployment_rate
+- explore: fredstats_unemployment_rate 
 
 - view: las_travelers
   derived_table:
