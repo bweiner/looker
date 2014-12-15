@@ -140,7 +140,7 @@
     type: sum
     sql: ${statewide}
     
-  - measure: Ave_statewide
+  - measure: ave_statewide
     type: average
     sql: ${statewide}
 
