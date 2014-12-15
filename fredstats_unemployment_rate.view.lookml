@@ -15,7 +15,6 @@
     decimals: 1
     sql: ${TABLE}.unrate
 
-    
   - measure: urate_ave
     type: average
     decimals: 1

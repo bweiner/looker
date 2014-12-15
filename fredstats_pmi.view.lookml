@@ -18,7 +18,6 @@
     type: average
     sql: ${pmi}
 
-    
   - measure: pmi_ave
     type: average
     sql: ${pmi}

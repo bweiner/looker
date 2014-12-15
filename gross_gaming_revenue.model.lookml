@@ -29,6 +29,25 @@
     - dimension: las_passengers
       type: int
 
+- view: nv_travelers
+  derived_table:
+    sql: |
+      SELECT
+        ymd, 
+        SUM(passengers) as nv_passengers
+      FROM us_carrier_transtats
+      WHERE Dest_state_abr='NV'
+      GROUP BY ymd
+    
+  fields:
+    - dimension: ymd
+      type: time
+      timeframes: [date]
+      primary_key: true
+      
+    - dimension: nv_passengers
+      type: int
+
 - explore: gross_gaming_revenue
   view: gross_gaming_revenue
   joins:
