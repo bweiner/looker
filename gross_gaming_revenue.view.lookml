@@ -139,6 +139,10 @@
   - measure: total_statewide
     type: sum
     sql: ${statewide}
+    
+  - measure: Ave_statewide
+    type: average
+    sql: ${statewide}
 
   - measure: total_washoe_county
     type: sum
