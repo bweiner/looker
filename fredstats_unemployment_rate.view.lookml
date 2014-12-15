@@ -19,4 +19,7 @@
   - measure: count
     type: count
     drill_fields: []
-
+    
+  - measure: urate_ave
+    type: average
+    sql: ${unrate}
